@@ -12,7 +12,7 @@
     <script>
         let buttonEl = document.getElementById('buttonEl')
         console.log(buttonEl)
-        buttonEl.addEventListener('click', async ()=> axios({
+        buttonEl.addEventListener('click', () => axios({
         method: 'get',
         url: `https://puny-swap-be.herokuapp.com/allCoins`,
     }).then(res=>console.log(res.data.data)))
